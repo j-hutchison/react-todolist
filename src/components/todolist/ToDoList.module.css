@@ -1,0 +1,7 @@
+.todolist {
+	list-style: none;
+	width: 35%;
+}
+.todolist-item {
+	background-color: red;
+}

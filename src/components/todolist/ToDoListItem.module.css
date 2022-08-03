@@ -1,0 +1,21 @@
+:root {
+	---green-primary: #03c03c;
+	---white-grey: rgba(255, 255, 255, 0.85);
+}
+
+.todolist-item {
+	background-color: var(---white-grey);
+	border-radius: 2px;
+	padding: 1rem;
+	margin-bottom: 0.75rem;
+
+	font-size: 1.4rem;
+}
+
+.todolist-item--active {
+	background-color: red;
+}
+
+.todolist-item:last-of-type {
+	margin-bottom: none;
+}

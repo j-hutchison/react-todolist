@@ -1,5 +1,6 @@
 :root {
 	---green-primary: #03c03c;
+	---white-grey: rgba(255, 255, 255, 0.85);
 }
 
 .menubar {
@@ -19,6 +20,8 @@
 	outline: none;
 	border: none;
 	border-radius: 2px;
+
+	background-color: var(---white-grey);
 }
 .menubar-input-add {
 	position: absolute;
@@ -49,15 +52,27 @@
 .menubar-filter-container::after {
 	content: "\25bc";
 	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	top: 50%;
-	right: 10px;
+	right: 0px;
 
-	color: var(---green-primary);
-	font-size: 1.2rem;
+	height: 100%;
+	width: 3.2rem;
 
-	z-index: 5;
+	background-color: var(---green-primary);
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+
 	pointer-events: none;
-	transform: translateY(-50%);
+	transform: translateY(-51%);
+	overflow: hidden;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 .menubar-filter-selection {
 	width: 100%;
@@ -67,6 +82,7 @@
 	border-radius: 2px;
 	color: var(---green-primary);
 	cursor: pointer;
+	background-color: var(---white-grey);
 
 	appearance: none;
 }
