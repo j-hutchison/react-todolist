@@ -1,22 +1,17 @@
 [
 	{
-		"name": "item 1",
-		"complete": false
+		"name": "Send tax email",
+		"complete": false,
+		"key": 1
 	},
 	{
-		"name": "item 2",
-		"complete": true
+		"name": "Check window serial numbers",
+		"complete": true,
+		"key": 2
 	},
 	{
-		"name": "item 3",
-		"complete": false
-	},
-	{
-		"name": "item 4",
-		"complete": true
-	},
-	{
-		"name": "item 5",
-		"complete": false
+		"name": "Order storage racks",
+		"complete": false,
+		"key": 3
 	}
 ]

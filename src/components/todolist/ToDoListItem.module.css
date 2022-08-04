@@ -1,21 +1,71 @@
 :root {
 	---green-primary: #03c03c;
+	---green-primary-hover: rgba(3, 192, 60, 0.8);
+	---red-orange: rgba(209, 81, 45, 1);
+	---green-dark-hover: rgba(1, 135, 73, 0.8);
+	---red-orange-hover: rgba(209, 81, 45, 0.8);
 	---white-grey: rgba(255, 255, 255, 0.85);
+	---white-grey-faded: #80eb89d3;
 }
 
 .todolist-item {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 	background-color: var(---white-grey);
-	border-radius: 2px;
-	padding: 1rem;
 	margin-bottom: 0.75rem;
+	border-radius: 2px;
+}
 
+.todolist-item-deleted {
+	background-color: var(---red-orange);
+	transform: rotate(10deg) translate(-100px, 200px);
+	opacity: 0.2;
+	transition: all 1s;
+}
+
+.todolist-item-text {
+	flex-grow: 1;
+	padding: 1rem;
 	font-size: 1.4rem;
+	overflow: hidden;
 }
 
 .todolist-item--active {
-	background-color: red;
+	text-decoration: line-through;
+	background-color: var(---white-grey-faded);
 }
 
 .todolist-item:last-of-type {
 	margin-bottom: none;
+}
+
+.todolist-item-buttons {
+	display: flex;
+}
+.todolist-item-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+
+	width: 3.2rem;
+	cursor: pointer;
+}
+
+.todolist-item-green {
+	background-color: var(---green-primary);
+}
+.todolist-item-green:hover,
+.todolist-item-green:active {
+	background-color: var(---green-primary-hover);
+}
+
+.todolist-item-red {
+	background-color: var(---red-orange);
+}
+
+.todolist-item-red:hover,
+.todolist-item-red:active {
+	background-color: var(---red-orange-hover);
 }
