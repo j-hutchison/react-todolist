@@ -1,17 +1,17 @@
 [
 	{
-		"name": "Send tax email",
+		"name": "Buy sugar",
 		"complete": false,
-		"key": 1
+		"key": -1
 	},
 	{
-		"name": "Check window serial numbers",
+		"name": "Tidy bedroom",
 		"complete": true,
-		"key": 2
+		"key": -2
 	},
 	{
-		"name": "Order storage racks",
+		"name": "Send birthday present",
 		"complete": false,
-		"key": 3
+		"key": -3
 	}
 ]

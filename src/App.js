@@ -9,7 +9,7 @@ import data from "./data/DummyListData.json";
 
 function App() {
 	const [listData, setListData] = useState(data);
-	const [listFilter, setListFilter] = useState(true);
+	const [listFilter, setListFilter] = useState("all");
 
 	const handleAddBtnClick = (name) => {
 		setListData(() => {

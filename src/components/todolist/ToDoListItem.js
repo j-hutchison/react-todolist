@@ -34,18 +34,18 @@ const ToDoListItem = (props) => {
 				{props.name}
 			</p>
 			<div className={classes["todolist-item-buttons"]}>
-				<span
+				<button
 					className={`${classes["todolist-item-green"]} ${classes["todolist-item-btn"]}`}
 					onClick={handleCompletedButtonClick}
 				>
 					<i className="fa-solid fa-check"></i>
-				</span>
-				<span
+				</button>
+				<button
 					className={`${classes["todolist-item-red"]} ${classes["todolist-item-btn"]}`}
 					onClick={handleDeleteButtonClick}
 				>
 					<i className="fa-solid fa-trash"></i>
-				</span>
+				</button>
 			</div>
 		</li>
 	);

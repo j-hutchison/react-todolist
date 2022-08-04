@@ -5,12 +5,10 @@ import ToDoListItem from "./ToDoListItem";
 const ToDoList = (props) => {
 	const displayItem = (item) => {
 		console.log(props.filter, item.complete);
-		if (!props.filter) {
-			if (item.complete) {
-				return true;
-			} else {
-				return false;
-			}
+		if (props.filter === "complete") {
+			return item.complete ? true : false;
+		} else if (props.filter === "incomplete") {
+			return !item.complete ? true : false;
 		}
 
 		return true;
