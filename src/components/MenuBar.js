@@ -13,9 +13,13 @@ const MenuBar = (props) => {
 
 	const onFilterChange = (e) => {
 		const [selectedOption] = e.target.selectedOptions;
-		const selectedOptionBool = selectedOption.dataset.booleanValue;
+		console.log(selectedOption.value);
 
-		props.onFilter(selectedOptionBool);
+		if (selectedOption.value === "Incomplete") {
+			props.setListFilter(() => false);
+		} else {
+			props.setListFilter(() => true);
+		}
 	};
 
 	return (

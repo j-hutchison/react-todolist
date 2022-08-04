@@ -19,8 +19,8 @@
 
 .todolist-item-deleted {
 	background-color: var(---red-orange);
-	transform: rotate(10deg) translate(-100px, 200px);
-	opacity: 0.2;
+	transform: rotate(10deg) translate(-100px, 150px);
+	opacity: 0;
 	transition: all 1s;
 }
 
@@ -34,6 +34,8 @@
 .todolist-item--active {
 	text-decoration: line-through;
 	background-color: var(---white-grey-faded);
+
+	transition: all 0.3s;
 }
 
 .todolist-item:last-of-type {

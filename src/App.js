@@ -9,7 +9,7 @@ import data from "./data/DummyListData.json";
 
 function App() {
 	const [listData, setListData] = useState(data);
-	const [listFilter, setListFilter] = useState();
+	const [listFilter, setListFilter] = useState(true);
 
 	const handleAddBtnClick = (name) => {
 		setListData(() => {
@@ -19,12 +19,6 @@ function App() {
 				key: Math.floor(Math.random() * 1000),
 			};
 			return [...listData, newListItem];
-		});
-	};
-
-	const handleFilterChange = (value) => {
-		setListFilter(() => {
-			return value;
 		});
 	};
 
@@ -50,8 +44,8 @@ function App() {
 		<div className="app">
 			<Header></Header>
 			<MenuBar
-				onFilter={handleFilterChange}
 				onClick={handleAddBtnClick}
+				setListFilter={setListFilter}
 			></MenuBar>
 			<ToDoList
 				todoList={listData}
